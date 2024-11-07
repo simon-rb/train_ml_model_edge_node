@@ -1,7 +1,3 @@
-Here's a revised README that emphasizes the simplicity of the example while still highlighting the use of the edge node, and notes that more advanced approaches are coming without delving into sales-oriented language.
-
----
-
 # AI Model Training on Alibaba Cloud's Zurich Edge Node
 
 ## Project Overview
@@ -138,17 +134,3 @@ This example is intentionally kept simple to provide a clear, focused demonstrat
 - **Data Privacy**: Localized processing minimizes data movement and improves privacy.
 
 ---
-
-## License
-
-[Specify the license here, if applicable]
-
----
-
-## Acknowledgments
-
-Special thanks to Alibaba Cloud for providing edge computing infrastructure that enables rapid AI experimentation.
-
----
-
-This README is now more reflective of the simple nature of the example while emphasizing the potential of the edge node without resorting to sales talk.
