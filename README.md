@@ -14,7 +14,7 @@ This repository demonstrates a basic example of training an AI model using Tenso
 
 ## Motivation
 
-Edge computing allows AI models to be trained and deployed closer to the data source, resulting in faster data processing, lower latency, and better efficiency. While this example is simple, it serves as an initial exploration of using edge computing for AI workloads. More advanced examples, tailored to real-world scenarios, will follow to better illustrate the true potential of edge computing.
+Edge computing allows AI models to be trained and deployed closer to the data source, resulting in faster data processing, lower latency, and better efficiency. While this example is simple, it serves as an initial exploration of using edge computing for AI workloads.
 
 ## Prerequisites
 
