@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This repository demonstrates a simple example of training an AI model using TensorFlow on Alibaba Cloud's Zurich edge node. The goal is to showcase the basic process of leveraging edge computing resources for AI workloads. While this is a straightforward example, it sets the stage for exploring more advanced use cases in the future.
+This repository demonstrates a basic example of training an AI model using TensorFlow on Alibaba Cloud's Zurich edge node. The primary aim is to showcase the process of leveraging edge computing resources for AI workloads in a straightforward way. While this example is intentionally simple, it sets the stage for exploring more complex and efficient use cases in the future.
 
 ## Project Contents
 
@@ -14,13 +14,13 @@ This repository demonstrates a simple example of training an AI model using Tens
 
 ## Motivation
 
-Edge computing is a powerful paradigm that enables faster data processing by bringing computation closer to data sources. While this example is simple, it highlights how even basic AI workflows can benefit from reduced latency and efficient resource utilization at the edge. Alibaba Cloud's Zurich edge node offers a robust platform to demonstrate these capabilities.
+Edge computing allows AI models to be trained and deployed closer to the data source, resulting in faster data processing, lower latency, and better efficiency. While this example is simple, it serves as an initial exploration of using edge computing for AI workloads. More advanced examples, tailored to real-world scenarios, will follow to better illustrate the true potential of edge computing.
 
 ## Prerequisites
 
 - Python 3.x installed on both your local machine and the edge node.
 - SSH access to the Alibaba Cloud edge node.
-- Installed packages: `numpy`, `matplotlib`, and `tensorflow`.
+- Required packages: `numpy`, `matplotlib`, and `tensorflow`.
 
 ---
 
@@ -54,7 +54,7 @@ source myenv/bin/activate
 
 #### c. Install TensorFlow and Other Dependencies
 
-Use the official PyPI index to avoid potential connectivity issues:
+To avoid potential connectivity issues with default mirrors, use the official PyPI index:
 
 ```bash
 pip install tensorflow --index-url https://pypi.org/simple
@@ -123,7 +123,7 @@ This script will load the trained weights and perform a simple inference, genera
 
 ## Note on Simplicity and Future Improvements
 
-This example is intentionally kept simple to provide a clear, focused demonstration of model training on an edge node. There are many other, more efficient, approaches to edge-based AI workflows that will be explored in future examples. Stay tuned!
+This example is kept intentionally simple to clearly demonstrate basic model training on an edge node. There are many other approaches and optimizations for edge-based AI workflows that will be explored in future examples. This is just the beginning—stay tuned for more complex scenarios that better highlight the capabilities and versatility of edge computing.
 
 ---
 
@@ -132,5 +132,3 @@ This example is intentionally kept simple to provide a clear, focused demonstrat
 - **Reduced Latency**: Training and processing are performed closer to the data source.
 - **Efficiency**: Even simple workflows benefit from the robust compute capabilities of edge nodes.
 - **Data Privacy**: Localized processing minimizes data movement and improves privacy.
-
----
