@@ -34,7 +34,7 @@ Connect to your Alibaba Cloud edge node using SSH:
 ssh root@your_instance_ip
 ```
 
-Replace `your_instance_ip` with the actual IP address of your edge node (e.g., `163.181.127.6`).
+Replace `your_instance_ip` with the actual IP address of your edge node (e.g., `163.121.137.9`).
 
 ### 2. Preparing the Environment on the Edge Node
 
@@ -68,7 +68,7 @@ pip install numpy matplotlib --index-url https://pypi.org/simple
 Transfer `train_model.py` from your local machine to the edge node:
 
 ```bash
-scp Documents/code/playground/train_model.py root@163.181.127.6:~/training_files/
+scp Documents/code/playground/train_model.py root@163.121.137.9:~/training_files/
 ```
 
 ---
@@ -78,7 +78,7 @@ scp Documents/code/playground/train_model.py root@163.181.127.6:~/training_files
 #### a. Connect to the Edge Node (if not already connected)
 
 ```bash
-ssh root@163.181.127.6
+ssh root@163.121.137.9
 ```
 
 #### b. Navigate to the Directory and Activate the Virtual Environment
@@ -103,7 +103,7 @@ This will train a basic model and save the weights to `model.weights.h5`.
 Transfer the trained weights back to your local machine:
 
 ```bash
-scp root@163.181.127.6:~/training_files/model.weights.h5 Documents/code/playground/
+scp root@163.121.137.9:~/training_files/model.weights.h5 Documents/code/playground/
 ```
 
 ---
@@ -123,7 +123,7 @@ This script will load the trained weights and perform a simple inference, genera
 
 ## Note on Simplicity and Future Improvements
 
-This example is intentionally kept simple to provide a clear, focused demonstration of model training on an edge node. There are many other, potentially more efficient, approaches to edge-based AI workflows that will be explored in future examples. Stay tuned!
+This example is intentionally kept simple to provide a clear, focused demonstration of model training on an edge node. There are many other, more efficient, approaches to edge-based AI workflows that will be explored in future examples. Stay tuned!
 
 ---
 
