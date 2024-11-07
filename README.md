@@ -68,7 +68,7 @@ pip install numpy matplotlib --index-url https://pypi.org/simple
 Transfer `train_model.py` from your local machine to the edge node:
 
 ```bash
-scp Documents/code/playground/train_model.py root@163.121.137.9:~/training_files/
+scp code/train_model.py root@163.121.137.9:~/training_files/
 ```
 
 ---
@@ -103,7 +103,7 @@ This will train a basic model and save the weights to `model.weights.h5`.
 Transfer the trained weights back to your local machine:
 
 ```bash
-scp root@163.121.137.9:~/training_files/model.weights.h5 Documents/code/playground/
+scp root@163.121.137.9:~/training_files/model.weights.h5 code/
 ```
 
 ---
@@ -121,14 +121,6 @@ This script will load the trained weights and perform a simple inference, genera
 
 ---
 
-## Note on Simplicity and Future Improvements
+## Note on Simplicity
 
-This example is kept intentionally simple to clearly demonstrate basic model training on an edge node. There are many other approaches and optimizations for edge-based AI workflows that will be explored in future examples. This is just the beginning—stay tuned for more complex scenarios that better highlight the capabilities and versatility of edge computing.
-
----
-
-## Benefits of Edge Computing for AI Training
-
-- **Reduced Latency**: Training and processing are performed closer to the data source.
-- **Efficiency**: Even simple workflows benefit from the robust compute capabilities of edge nodes.
-- **Data Privacy**: Localized processing minimizes data movement and improves privacy.
+This example is kept intentionally simple to clearly demonstrate basic model training on an edge node. There are many other approaches and optimizations for edge-based AI workflows that will be explored in future examples.
